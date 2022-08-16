@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+.log{
+    color: #252733;
+    font-weight: bolder;
+}
+
 .container {
     background-color: aliceblue;
     width: 380px;

@@ -2,6 +2,7 @@ import React from "react";
 import 'antd/dist/antd.min.css';
 import "./Login.css";
 import { Form, Input, Button } from "antd";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [form] = Form.useForm();
@@ -25,7 +26,7 @@ const Login = () => {
       <Form.Item  
       > <div className="password">
         <label>Password</label>
-        <p style={{display: 'inline'}}>Forgot password?</p>
+        <Link to='/'>Forgot password?</Link>
       </div>
         <Input type='password' placeholder="password" />
       </Form.Item>
@@ -35,7 +36,7 @@ const Login = () => {
     </Form>
         </div>
         <div className="account">
-            <p>Don’t have an account? <a href="/" style={{color: 'blue'}}>Sign up</a></p>
+            <p>Don’t have an account? <Link to={'/'} style={{color: 'blue'}}>Sign up</Link></p>
         </div>
       </div>
     </div>

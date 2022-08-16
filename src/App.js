@@ -1,5 +1,6 @@
 import './App.css';
 import Login from './pages/Login';
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
     <div className="App">
 
     <Login />
+    <Routes>
+      <Route exact path='/' element={<Login />} />
+    </Routes>
 
     </div>
   );
